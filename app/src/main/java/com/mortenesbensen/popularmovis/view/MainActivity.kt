@@ -1,7 +1,8 @@
-package com.mortenesbensen.popularmovis
+package com.mortenesbensen.popularmovis.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.mortenesbensen.popularmovis.R
 
 class MainActivity : AppCompatActivity() {
 
