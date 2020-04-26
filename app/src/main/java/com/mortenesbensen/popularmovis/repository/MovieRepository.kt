@@ -1,4 +1,10 @@
 package com.mortenesbensen.popularmovis.repository
 
-class MovieRepository {
+import com.mortenesbensen.popularmovis.data.PopularMovies
+import retrofit2.http.GET
+
+interface MovieRepository {
+
+    @GET("movie/popular")
+    suspend fun getPopularMovies() : PopularMovies
 }
