@@ -9,6 +9,7 @@
         <variable
             name="viewModel"
             type="com.mortenesbensen.popularmovis.view.MovieListViewModel" />
+
     </data>
 
 

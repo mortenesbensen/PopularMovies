@@ -8,11 +8,16 @@
         <variable
             name="movie"
             type="com.mortenesbensen.popularmovis.data.Movie" />
+
+        <variable
+            name="listener"
+            type="com.mortenesbensen.popularmovis.view.OnItemClickedListener" />
     </data>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="@{() -> listener.onItemClicked(movie)}"
         app:cardCornerRadius="4dp"
         app:cardElevation="4dp"
         app:contentPadding="16dp">

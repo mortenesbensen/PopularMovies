@@ -1,5 +1,6 @@
 package com.mortenesbensen.popularmovis.repository
 
+import com.mortenesbensen.popularmovis.data.MovieDetails
 import com.mortenesbensen.popularmovis.data.PopularMovies
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -35,6 +36,8 @@ class MovieDbRepository private constructor() {
 
     suspend fun getPopularMovies(): PopularMovies = client.getPopularMovies()
 
+    suspend fun getMovieDetails(movieId: Int): MovieDetails = client.getMovieDetails(movieId)
+
     companion object {
 
         fun create(): MovieDbRepository {
@@ -42,6 +45,6 @@ class MovieDbRepository private constructor() {
         }
 
         private const val URL = "https://api.themoviedb.org/3/"
-        private const val API_KEY = ""
+        private const val API_KEY = "0d769fc011223444a3a2aea3252aea57"
     }
 }
